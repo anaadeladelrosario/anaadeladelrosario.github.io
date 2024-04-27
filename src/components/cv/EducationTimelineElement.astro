@@ -1,0 +1,14 @@
+---
+const { Item } = Astro.props; // TODO fix this to use the type EducationItem
+import TimelineElement from '@components/cv/TimelineElement.astro'
+
+const title = Item.QualificationLevel + " in "+Item.QualificationName
+const subtitle = Item.YearStart+ "-" + Item.YearEnd + " " + Item.InstituteName
+---
+
+<TimelineElement 
+  title={title}
+  subtitle={subtitle}
+/>
+
+

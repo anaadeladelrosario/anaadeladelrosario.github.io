@@ -1,0 +1,12 @@
+---
+import { Languages } from "@config"
+---
+
+
+<ul class="list-disc md:columns-5 columns-2 mx-6">
+    {Languages.map((lang)=> (
+         <li>{lang.Name}: {lang.Level}</li>
+    ))}
+   
+    
+  </ul>

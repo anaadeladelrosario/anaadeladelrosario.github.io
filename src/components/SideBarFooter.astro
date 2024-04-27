@@ -1,3 +1,6 @@
+---
+import { Config } from "@root/config"
+---
 <div
     class="block sticky pointer-events-none bottom-10 bg-base-200 justify-center h-12 [mask-image:linear-gradient(transparent,#000000)]"
 >
@@ -19,7 +22,7 @@
         </svg>
     </a>
     <a
-        href="https://www.linkedin.com/in/manuelernestogr"
+        href={Config.MyLinkedIn}
         target="_blank"
         class="mx-3"
         aria-label="Linkedin"

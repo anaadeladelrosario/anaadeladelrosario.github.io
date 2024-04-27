@@ -1,0 +1,10 @@
+---
+import EducationTimelineElement from "@components/cv/EducationTimelineElement.astro";
+import { Education } from "@config"
+---
+
+<div class="time-line-container grid gap-4 mb-10">
+{Education.map(item=>(
+  <EducationTimelineElement Item={item} />
+))}
+</div>

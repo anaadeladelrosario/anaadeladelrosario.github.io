@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import TimeLineElement from "../components/cv/TimeLine.astro";
+import TimelineElement from "@components/cv/TimelineElement.astro";
+import EducationTimeline from "@components/cv/EducationTimeline.astro";
+import Languages from "@components/cv/Languages.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
@@ -15,50 +17,26 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
+  <div class="header">Education</div>
+  <EducationTimeline />
 
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-  </div>
+  <div class="header">Languages</div>
+  <Languages />
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
+  <div class="header">Experience</div>
+
 
   <div class="time-line-container mb-10">
-    <TimeLineElement
+    <TimelineElement
       title="Job Title at Project or Company Name"
       subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
+    </TimelineElement>
+  
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
+  <div class="header">Certifications</div>
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
       <a href="#" target="_blank"> Certification Name (with link)</a>
@@ -68,9 +46,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     </li>
   </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
+  <div class="header">Skills</div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">
     <li>Skill Name</li>
@@ -90,3 +66,9 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <li>Skill Name</li>
   </ul>
 </BaseLayout>
+
+<style>
+  .header{
+    @apply mb-5 text-3xl w-full font-bold;
+  }
+</style>
