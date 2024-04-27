@@ -40,14 +40,15 @@ export const Education: Array<EducationItem> = [
 ];
 
 type LanguageItem = {
+  Id: string;
   Name: string;
   Level: string;
   Example: string;
 };
 export const Languages: Array<LanguageItem> = [
-  { Name: "Spanish", Level: "Native", Example: "Hola!" },
-  { Name: "English", Level: "Fluent", Example: "Hi!" },
-  { Name: "Swedish", Level: "Fluent", Example: "Hej!" },
+  { Name: "Spanish", Level: "Native", Example: "Hola!", Id: "es" },
+  { Name: "English", Level: "Fluent", Example: "Hi!", Id: "gb" },
+  { Name: "Swedish", Level: "Fluent", Example: "Hej!", Id: "sv" },
 ];
 
 type ExperienceItem = {

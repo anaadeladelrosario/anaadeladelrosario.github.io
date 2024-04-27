@@ -1,12 +1,23 @@
 ---
 import { Languages } from "@config"
 import LanguagesListElement from "@components/cv/LanguagesListElement.astro"
+import FlagEs from '@icons/language/es.svg'
+import FlagGb from '@icons/language/gb.svg'
+import FlagSv from '@icons/language/sv.svg'
+
+const flags = {
+     'gb': FlagGb,
+     'es': FlagEs,
+     'sv': FlagSv,
+}
+console.log(FlagEs)
 ---
 
 <div class="stats shadow mb-12">
      {Languages.map((lang)=> (
           <LanguagesListElement 
-               language={lang}
+               language={lang} flag={flags[lang.Id]}
           />
      ))}
 </div>
+ 

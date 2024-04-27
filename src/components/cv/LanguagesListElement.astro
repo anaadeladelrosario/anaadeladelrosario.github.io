@@ -1,15 +1,13 @@
 ---
-const { language } = Astro.props; 
+const { language, flag } = Astro.props; 
 import { Icon } from 'astro-icon/components'
 import { Image } from "astro:assets";
-
-import Flag from '@icons/language/es.svg'
 ---
 
 <div class="stat">
   <div class="stat-figure text-primary">
     <!-- <Icon name="language/es" /> -->
-    <Image class="mask mask-heart w-16" src={Flag} alt="Language flag"/>
+    <Image class="mask mask-heart w-16" src={flag} alt="Language flag"/>
   </div>
   <div class="stat-title text-xl text-primary">{language.Name}</div>
   <div class="stat-value text-xl">{language.Level}</div>
