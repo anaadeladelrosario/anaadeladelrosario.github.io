@@ -1,0 +1,12 @@
+---
+import { Certifications } from "@config"
+import CertificationListElement from "@root/components/cv/CertificationTimelineElement.astro"
+---
+
+<div class="list-disc mx-6 mb-10 grid gap-2">
+     {Certifications.map((cert)=> (
+          <CertificationListElement 
+               Item={cert}
+          />
+     ))}
+</div>

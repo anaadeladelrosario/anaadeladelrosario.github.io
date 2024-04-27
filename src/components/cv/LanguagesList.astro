@@ -1,12 +1,12 @@
 ---
 import { Languages } from "@config"
+import LanguagesListElement from "@components/cv/LanguagesListElement.astro"
 ---
 
-
-<ul class="list-disc md:columns-5 columns-2 mx-6">
-    {Languages.map((lang)=> (
-         <li>{lang.Name}: {lang.Level}</li>
-    ))}
-   
-    
-  </ul>
+<div class="stats shadow mb-12">
+     {Languages.map((lang)=> (
+          <LanguagesListElement 
+               language={lang}
+          />
+     ))}
+</div>
