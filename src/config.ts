@@ -30,10 +30,16 @@ export const Education: Array<EducationItem> = [
     InstituteName: "Stockholm University",
   },
   {
-    QualificationLevel:
-      "Bachelor of Science in Sociology & Master of Science in Sociology",
-    QualificationName: "Computer and Systems Science",
+    QualificationLevel: "Bachelor of Science",
+    QualificationName: "Sociology",
     YearStart: 2003,
+    YearEnd: 2006,
+    InstituteName: "Universidad de la Habana",
+  },
+  {
+    QualificationLevel: "Master of Science",
+    QualificationName: "Sociology",
+    YearStart: 2008,
     YearEnd: 2009,
     InstituteName: "Universidad de la Habana",
   },
@@ -56,7 +62,7 @@ type ExperienceItem = {
   Description: string;
   Company: string;
   StartYear: number;
-  EndYear?: number;
+  EndYear?: number | null;
   City: string;
   Country: string;
 };
@@ -79,7 +85,7 @@ export const Experiences: Array<ExperienceItem> = [
     City: "Stockholm",
     Country: "Sweden",
     Description:
-      "Responsible for delivering results, meeting customer expectations. Manage License Models, ensure  asset registration and definition management among other administrative tasks.",
+      "Responsible for delivering results in a software development team. Meet customer expectations. Manage License Models, ensure  asset registration and definition management.",
   },
 ];
 
