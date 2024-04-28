@@ -1,0 +1,12 @@
+---
+import { Skills } from "@config"
+import SkillsListElement from "@components/cv/SkillsListElement.astro"
+---
+
+<div class="list-disc md:columns-5 columns-2 mx-6">
+    {Skills.map((item)=> (
+         <SkillsListElement 
+              skill={item}
+         />
+    ))}
+</div>
