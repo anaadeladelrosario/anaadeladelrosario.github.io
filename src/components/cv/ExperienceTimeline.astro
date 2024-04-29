@@ -1,11 +1,11 @@
 ---
 import { Experiences } from "@config"
-import ExperienceTimelineElement from "@components/cv/ExperienceTimelineElement.astro"
+import ExperienceListElement from "@root/components/cv/ExperienceTimelineElement.astro"
 ---
 
 <div class="time-line-container grid gap-4 mb-10">
      {Experiences.map((exp)=> (
-          <ExperienceTimelineElement 
+          <ExperienceListElement 
                Item={exp}
           />
      ))}
