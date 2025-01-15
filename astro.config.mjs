@@ -12,7 +12,7 @@ const LOCALHOST_URL =  `http://localhost:${SERVER_PORT}`;
 const PROD = "https://aimcvport.github.io";
 
 const SCRIPT = process.env.npm_lifecycle_script || "";
-const isBuild = SCRIPT.includes("astro build");
+const isBuild = SCRIPT.includes("astro build")
 
 let BASE_URL = LOCALHOST_URL;
 
