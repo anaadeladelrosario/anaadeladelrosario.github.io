@@ -41,6 +41,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        with:
-          # Optional: specify the directory if needed, default is `./dist`
-          publish_dir: ./dist  # Ensure this matches your Astro build output folder
