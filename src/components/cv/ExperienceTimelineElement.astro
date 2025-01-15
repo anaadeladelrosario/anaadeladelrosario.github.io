@@ -1,16 +1,11 @@
 ---
 const { Item } = Astro.props;
-import TimelineElement from '@components/cv/TimelineElement.astro'
+import TimelineElement from "@components/cv/TimelineElement.astro";
 
- const title= Item.Role;
- const subtitle = `From ${Item.StartYear} to ${Item.EndYear ?? '(Ongoing)'} at ${Item.Company}, ${Item.City}, ${Item.Country}`;
+const title = Item.Role;
+const subtitle = `From ${Item.StartYear} to ${Item.EndYear} @ ${Item.Company}, ${Item.City}, ${Item.Country}`;
 ---
 
-<TimelineElement 
-  title={title}
-  subtitle={subtitle}
->
-<p>{Item.Description}</p>
+<TimelineElement title={title} subtitle={subtitle}>
+  <p>{Item.Description}</p>
 </TimelineElement>
-
-
