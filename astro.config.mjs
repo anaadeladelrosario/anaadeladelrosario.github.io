@@ -17,7 +17,7 @@ const isBuild = SCRIPT.includes("astro build")
 let BASE_URL = LOCALHOST_URL;
 
 // when building site in local set your URL manually
-if( isBuild)
+if (isBuild)
 {
   BASE_URL = PROD;
 }
