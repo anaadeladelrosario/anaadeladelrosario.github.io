@@ -2,22 +2,29 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
-import { Config } from '@root/config.ts'
+import { Config } from "@root/config.ts";
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hi!</div>
     <div class="text-5xl font-bold">I am {Config.MyName},</div>
-    <div class="text-3xl py-3 font-bold">a Software Engineer </div>
+    <div class="text-3xl py-3 font-bold">a Software Engineer</div>
     <div class="py-2">
       <text class="text-lg">
-        Here is a brief introduction about me and my work experience so far...
+        Check CV tab on the column to your left to read more about me and past
+        experience
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href={`${Config.MyLinkedIn}`} target="_blank">Let's connect!</a>
-      <a href={`${Config.MyGitHub}`} target="_blank" class="btn btn-outline ml-5">
+      <a class="btn" href={`${Config.MyLinkedIn}`} target="_blank"
+        >Let's connect!</a
+      >
+      <a
+        href={`${Config.MyGitHub}`}
+        target="_blank"
+        class="btn btn-outline ml-5"
+      >
         See my work link to gitub
       </a>
     </div>
