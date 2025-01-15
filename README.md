@@ -21,11 +21,11 @@ These instructions will help you set up and run the project on your computer.
 ### Requirements
 
 - Node.js (version 16 or higher)
-- PNPM package manager
+- NPM package manager
 
 ### Installation
 
-1. Install PNPM if you don't have it: npm install -g pnpm
+1. Install NPM if you don't have it: npm install npm
 
 2. Install project dependencies: pnpm install
 
