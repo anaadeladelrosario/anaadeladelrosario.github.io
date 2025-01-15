@@ -9,7 +9,7 @@ const SERVER_PORT =3000;
 const LOCALHOST_URL =  `http://localhost:${SERVER_PORT}`;
 
 // url to access the portfolio after deploying somewhere (e.g. GitHub Pages)
-const PROD = "https://aimcvport.github.io";
+const PROD = "https://anaadeladelrosario.github.io";
 
 const SCRIPT = process.env.npm_lifecycle_script || "";
 const isBuild = SCRIPT.includes("astro build")
