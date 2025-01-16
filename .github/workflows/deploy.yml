@@ -41,6 +41,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: astro-build
+          path: ./dist  # Path to the build directory
       - name: Download the artifact
         uses: actions/download-artifact@v4
         with:
