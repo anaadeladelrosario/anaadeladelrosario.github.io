@@ -27,18 +27,18 @@ These instructions will help you set up and run the project on your computer.
 
 1. Install NPM if you don't have it: npm install npm
 
-2. Install project dependencies: pnpm install
+2. Install project dependencies: npm install
 
 ### Running the Application
 
-To start the application in development mode: pnpm dev
+To start the application in development mode: npm dev
 
 
 The application will open in your default web browser. If it doesn't, you can manually open it.
 
 ### Building for Production
 
-To create a production-ready version: pnpm build
+To create a production-ready version: npm build
 
 
 ## Need Help?

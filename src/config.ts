@@ -69,16 +69,6 @@ type ExperienceItem = {
 
 export const Experiences: Array<ExperienceItem> = [
   {
-    Role: "IT Trainee/ICT DevOps Engineer",
-    StartYear: 2020,
-    EndYear: 2021,
-    Company: "Ericsson AB",
-    City: "Stockholm",
-    Country: "Sweden",
-    Description:
-      "IT Trainee program. Rotation in different areas within Group-IT and get a broader understanding of Ericsson Business. Opportunity to build a larger network within Ericsson and explore different areas of interest such as Cloud, Analytics, Machine Learning, Artificial Intelligence and Cyber Security. Responsible for delivering results, meeting customer expectations. Manage License Models, ensure  asset registration and definition management among other administrative tasks.",
-  },
-  {
     Role: "Software Engineer",
     StartYear: 2021,
     EndYear: 2024,
@@ -87,6 +77,16 @@ export const Experiences: Array<ExperienceItem> = [
     Country: "Sweden",
     Description:
       "Frontender with UX designer in the team. Utilize Azure DevOps for efficient workflow management. I´ve been building react components and RESTful APIs, improving code quality and adopting  TDD to align with DevSecOps practices. Gained knowledge about network topology domain to enhance our application and took the responsibility for scanning and analyzing code to keep it  free from vulnerabilities using static and dynamic scanning tools.",
+  },
+  {
+    Role: "IT Trainee/ICT DevOps Engineer",
+    StartYear: 2020,
+    EndYear: 2021,
+    Company: "Ericsson AB",
+    City: "Stockholm",
+    Country: "Sweden",
+    Description:
+      "IT Trainee program. Rotation in different areas within Group-IT and get a broader understanding of Ericsson Business. Opportunity to build a larger network within Ericsson and explore different areas of interest such as Cloud, Analytics, Machine Learning, Artificial Intelligence and Cyber Security. Responsible for delivering results, meeting customer expectations. Manage License Models, ensure  asset registration and definition management among other administrative tasks.",
   },
 ];
 
@@ -113,6 +113,7 @@ export const Skills: Array<SkillItem> = [
   { Item: "HTML" },
   { Item: "React Testing Library" },
   { Item: "React Library" },
+  {Item: "Node.js"},
   { Item: "Java" },
   { Item: "SQL" },
   { Item: ".Net Core" },
