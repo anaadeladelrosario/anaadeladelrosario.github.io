@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimelineElement from "@components/cv/TimelineElement.astro";
 import EducationTimeline from "@components/cv/EducationTimeline.astro";
 import LanguagesList from "@components/cv/LanguagesList.astro";
-import ExperienceTimeline from "@components/cv/ExperienceTimeline.astro"
+import ExperienceTimeline from "@components/cv/ExperienceTimeline.astro";
 import CertificationList from "@components/cv/CertificationTimeline.astro";
 import SkillsList from "@components/cv/SkillsList.astro";
 ---
@@ -14,10 +14,13 @@ import SkillsList from "@components/cv/SkillsList.astro";
   </div>
 
   <div class="mb-10 text-justify">
-    
-    <p>I am a Software Engineer specializing in Frontend Development, currently employed at Ericsson in Sweden within Enterprise IT. Within my role, I collaborate with a dynamic team that adheres to Agile methodologies, utilizing Azure DevOps as our primary platform for project planning, source code management, and collaboration.
-    Known for my dedication and ambition, I possess strong interpersonal skills and thrive as a team player. I am committed to continuous learning and skill development, consistently taking on new challenges and responsibilities while offering assistance to my colleagues.
-
+    <p>
+      Software Engineer with special focus in Frontend development. With a
+      background in social research and communication. Passionate about people
+      and technology, and seeking IT opportunities that allow me to
+      build user friendly systems with purpose and impact. In my free time I do
+      photography, combat sports and running. I am also a food lover who enjoys
+      baking.
     </p>
   </div>
 
@@ -28,18 +31,17 @@ import SkillsList from "@components/cv/SkillsList.astro";
   <LanguagesList />
 
   <div class="header">Experience</div>
- <ExperienceTimeline />
+  <ExperienceTimeline />
 
   <div class="header">Certifications</div>
   <CertificationList />
 
   <div class="header">Skills</div>
-<SkillsList />
-  
+  <SkillsList />
 </BaseLayout>
 
 <style>
-  .header{
+  .header {
     @apply mb-5 text-3xl w-full font-bold;
   }
 </style>

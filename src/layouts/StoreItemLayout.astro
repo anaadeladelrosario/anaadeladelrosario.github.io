@@ -1,0 +1,36 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    heroImage?: string;
+    updatedDate?: Date;
+    pricing?: string;
+    oldPricing?: string;
+    checkoutUrl?: string;
+    badge?: string;
+    custom_link?: string;
+    custom_link_label?: string;
+}
+
+const {
+    title,
+    description,
+    heroImage,
+    updatedDate,
+    pricing,
+    oldPricing,
+    checkoutUrl,
+    badge,
+    custom_link,
+    custom_link_label,
+} = Astro.props;
+---
+
+<div>
+    <!-- Add your layout HTML here -->
+    <h1>{title}</h1>
+    <p>{description}</p>
+    {heroImage && <img src={heroImage} alt={title} />}
+    <slot />
+</div>
+
