@@ -1,9 +1,9 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = "Astrofy | Personal Portfolio Website Template";
+export const SITE_TITLE = "CV Portfolio Website Ana";
 export const SITE_DESCRIPTION =
-  "Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.";
+  "Personal Portfolio Website built with Astro and TailwindCSS.";
 export const GENERATE_SLUG_FROM_TITLE = true;
 export const TRANSITION_API = true;
 
@@ -30,10 +30,16 @@ export const Education: Array<EducationItem> = [
     InstituteName: "Stockholm University",
   },
   {
-    QualificationLevel:
-      "Bachelor of Science in Sociology & Master of Science in Sociology",
-    QualificationName: "Computer and Systems Science",
+    QualificationLevel: "Bachelor of Science",
+    QualificationName: "Sociology",
     YearStart: 2003,
+    YearEnd: 2006,
+    InstituteName: "Universidad de la Habana",
+  },
+  {
+    QualificationLevel: "Master of Science",
+    QualificationName: "Sociology",
+    YearStart: 2008,
     YearEnd: 2009,
     InstituteName: "Universidad de la Habana",
   },
@@ -56,22 +62,12 @@ type ExperienceItem = {
   Description: string;
   Company: string;
   StartYear: number;
-  EndYear?: number;
+  EndYear?: number | null;
   City: string;
   Country: string;
 };
 
 export const Experiences: Array<ExperienceItem> = [
-  {
-    Role: "IT Trainee/ICT DevOps Engineer",
-    StartYear: 2020,
-    EndYear: 2021,
-    Company: "Ericsson AB",
-    City: "Stockholm",
-    Country: "Sweden",
-    Description:
-      "IT Trainee program. Rotation in different areas within Group-IT and get a broader understanding of Ericsson Business. Opportunity to build a larger network within Ericsson and explore different areas of interest such as Cloud, Analytics, Machine Learning, Artificial Intelligence and Cyber Security. Responsible for delivering results, meeting customer expectations. Manage License Models, ensure  asset registration and definition management among other administrative tasks.",
-  },
   {
     Role: "Software Engineer",
     StartYear: 2021,
@@ -81,6 +77,16 @@ export const Experiences: Array<ExperienceItem> = [
     Country: "Sweden",
     Description:
       "Frontender with UX designer in the team. Utilize Azure DevOps for efficient workflow management. I´ve been building react components and RESTful APIs, improving code quality and adopting  TDD to align with DevSecOps practices. Gained knowledge about network topology domain to enhance our application and took the responsibility for scanning and analyzing code to keep it  free from vulnerabilities using static and dynamic scanning tools.",
+  },
+  {
+    Role: "IT Trainee/ICT DevOps Engineer",
+    StartYear: 2020,
+    EndYear: 2021,
+    Company: "Ericsson AB",
+    City: "Stockholm",
+    Country: "Sweden",
+    Description:
+      "IT Trainee program. Rotation in different areas within Group-IT and get a broader understanding of Ericsson Business. Opportunity to build a larger network within Ericsson and explore different areas of interest such as Cloud, Analytics, Machine Learning, Artificial Intelligence and Cyber Security. Responsible for delivering results, meeting customer expectations. Manage License Models, ensure  asset registration and definition management among other administrative tasks.",
   },
 ];
 
@@ -107,6 +113,7 @@ export const Skills: Array<SkillItem> = [
   { Item: "HTML" },
   { Item: "React Testing Library" },
   { Item: "React Library" },
+  {Item: "Node.js"},
   { Item: "Java" },
   { Item: "SQL" },
   { Item: ".Net Core" },
@@ -120,3 +127,7 @@ export const Skills: Array<SkillItem> = [
   { Item: "Linux OS (basics)" },
   { Item: "AzureDevOps" },
 ];
+
+// setup in astro.config.mjs
+const BASE_URL = new URL(import.meta.env.SITE);
+export const SITE_URL = BASE_URL.origin;

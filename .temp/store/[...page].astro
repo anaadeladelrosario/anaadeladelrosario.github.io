@@ -1,13 +1,20 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import HorizontalShopItem from "../../components/HorizontalShopItem.astro";
+import BaseLayout from "../../src/layouts/BaseLayout.astro";
+import HorizontalShopItem from "../../src/components/HorizontalShopItem.astro";
 import { getCollection } from "astro:content";
+import type { GetStaticPaths, Page } from 'astro';
+import type { CollectionEntry } from 'astro:content';
 
-export async function getStaticPaths({ paginate }) {
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const items = await getCollection("store");
   items.sort((a, b) => b.data.updatedDate.valueOf() - a.data.updatedDate.valueOf());
   return paginate(items, { pageSize: 10 });
 }
+
+interface Props {
+  page: Page<CollectionEntry<"store">>;
+}
+
 const { page } = Astro.props;
 ---
 
