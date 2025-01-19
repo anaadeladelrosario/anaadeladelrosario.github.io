@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+const description =
+    "In a collaborative PoC project, I led a team of university students to develop a WebRTC-based screen-sharing application using ReactJs, C#, and Swagger. I guided the team through key aspects of WebRTC, such as architecture types, signaling servers, and APIs, while addressing challenges like NAT traversal. My proactive approach in research, adapting existing solutions, and mentoring students was crucial in overcoming obstacles and ensuring the project's success, ultimately deepening our understanding of real-time communication.";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
+    <div>
+        <div class="text-3xl w-full font-bold mb-5">
+            Work Experience Projects
+        </div>
+    </div>
+
+    <HorizontalCard
+        title="AIPowered taskgenerator"
+        img=""
+        desc="At a hackathon themed “Revolutionizing Productivity,” we aimed for an 80% efficiency gain using Generative AI. With 3 hours of prep, we pitched our Azure OpenAI and ChatGPT3-driven solution, focusing on development efficiency without security constraints. Our innovative approach won votes for its idea, readiness, and scalability. I contributed through workflow analysis, ChatGPT exploration, and frontend development."
+        url="#"
+        badge="April 2023"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="MobTool with WebRtc"
+        img=""
+        desc={description}
+        url="#"
+        badge="December 2021- April 2022"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Ericsson Fika"
+        img=""
+        desc="I contributed to the development of Ericsson Fika, a social collaboration platform aimed at enhancing teamwork and knowledge sharing. As a frontend developer, I used ReactJs to create an engaging user interface, focusing on performance and usability. Additionally, I gained valuable backend experience with Node.js, contributing to server-side development and API integration. My work in both frontend and backend was crucial to the platform's success in fostering better communication and collaboration among colleagues."
+        url="#"
+        badge="July 2021-December 2021"
+    />
+
+    <div>
+        <div class="text-3xl w-full font-bold mb-5 mt-10">
+            Academic Projects
+        </div>
+    </div>
+
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Miljöboven"
+        img=""
+        desc="In this project, I was responsible for transforming an static HTML and CSS prototype into a dynamic site using the .NET framework. This experience enhanced my independence as a programmer, pushing me to find creative solutions to new challenges. I learned C# programming and gained hands-on experience in creating databases using the Code First approach in .NET Core with the MVC pattern. Additionally, I was able to apply my prior knowledge of Java, further developing my programming skills and solidifying my understanding of backend development and database management."
+        url="#"
+        badge="2019"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Hi-fi prototype ULTRAKOST"
+        img=""
+        desc="Developed a prototype for ultramarathon runners to plan dietary intake and identify refill points using Google GPS integration. Conducted user research to define project requirements and ensure the prototype met user needs. This project enhanced my ability to create prototypes tailored to various objectives and stakeholders, while improving my HTML and CSS skills. It also strengthened my UX/UI design abilities, as well as my problem-solving and user-centered design skills. Additionally, I gained insights into project management, collaboration in teams, and understanding the challenges faced by marathon runners to optimize performance."
+        url="#"
+        badge="2018"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Mobile application-EVIDER"
+        img=""
+        desc="Developed Event Guider, an app to help people find the fastest, least crowded route to local traffic from events at Globen Arena in Stockholm. I contributed creative solutions, including color-coded paths on street lamps to guide users. The app integrated SL APIs and smart street lamps with motion sensors. Working with the frontend team, I improved my skills in SQL, HTML, JavaScript, Angular, CSS, and JSON. I also gained experience with version control (GIT/GitHub) and learned about Scrum methodology and how APIs communicate across systems."
+        url="#"
+        badge="2018"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Hi-fi prototype Realtidsmuseet "
+        img=""
+        desc="Developed a prototype for a platform to assist museum educators by providing location-based information to visitors using IoT and beacons. I applied Java and HCI knowledge to create an intuitive Android application and took the initiative to conduct a field study to assess user-friendliness. I gathered data to improve the user experience and focused on designing a user-friendly GUI. This project enhanced my understanding of how mobile applications and beacons can transform real-world interactions and events."
+        url="#"
+        badge="2017"
+    />
+</BaseLayout>
