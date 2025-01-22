@@ -1,6 +1,6 @@
 # Project CV for Portfolio
 
-An interactive and modern CV/Portfolio website template built with modern web technologies. This project serves as both my personal portfolio and a customizable template for developers who want to showcase their professional experience, skills, and projects in a creative way.
+An interactive and modern CV/Portfolio website template built with modern web technologies. This project serves as both my personal portfolio and a customizable template for developers who want to showcase their professional experience, skills, and projects in a creative way. If you want to take a look just open this URL: https://anaadeladelrosario.github.io/ or go to Settings> Pages and under Github Pages click on the link Visit Site
 
 ## Features
 
