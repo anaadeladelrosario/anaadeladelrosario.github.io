@@ -75,8 +75,9 @@ export const Experiences: Array<ExperienceItem> = [
     Company: "Ericsson AB",
     City: "Stockholm",
     Country: "Sweden",
-    Description:
-      "Frontender with UX designer in the team. Utilize Azure DevOps for efficient workflow management. I´ve been building react components and RESTful APIs, improving code quality and adopting  TDD to align with DevSecOps practices. Gained knowledge about network topology domain to enhance our application and took the responsibility for scanning and analyzing code to keep it  free from vulnerabilities using static and dynamic scanning tools.",
+    Description: `As a Software Engineer, I initially worked on Poc, where I learned React, JavaScript, TypeScript, and Storybook. I gained hands-on experience in API development using Node.js and improved my skills in version control with Git/GitHub. By writing APIs and using Postman, I developed an understanding of backend communication and testing.\n
+    I then contributed to a WebRTC-based project, developing a Teams app for screen sharing and pair programming. I worked on the frontend using React and gained valuable experience in project management by guiding interns, organizing tasks, and collaborating with cross-functional teams. Through this experience, I learned to manage deadlines, make presentations, and address team challenges, while also deepening my understanding of WebRTC and frontend development. In parallel, I worked on building reusable components for Ericsson’s internal design system, collaborating with cross-functional teams to iterate on design improvements and enhance the user experience. This project helped me strengthen my React and TypeScript skills, and I gained hands-on experience with agile workflows, code reviews, and fast feedback loops—knowledge I applied while working on the WebRTC project.\n\n
+    Lately, I joined a larger, remote team of back-end developers, a Scrum Master, and a tester. During this time, I honed my React skills, focusing on components, hooks, and using TanStack for building tables. I also gained experience working with SQL Server Management Studio while continuing to contribute to React component development. I took the initiative to introduce Test-Driven Development (TDD) practices, writing tests with React Testing Library, Vitest, and later, Jest. To accelerate frontend development, I introduced Mock Service Worker (MSW) for API simulation, and I contributed to improving code security by integrating SAST and DAST tools. I actively worked on enhancing team workflows by creating flowcharts and driving the adoption of more efficient processes. Additionally, I collaborated with the UX team to refine the user interface, resulting in a more intuitive and user-friendly product. Throughout all these projects, I continually learned new technologies, refined my problem-solving skills, and contributed to creating more efficient and secure processes, all while fostering a culture of collaboration and continuous improvement. On the side, participated in multiple Ericsson Hackathons, winning 1st place twice for best idea, scalability, and implementation readiness. Gained experience working with OpenAI APIs and integrating them with Azure DevOps. Participated in Ericsson’s culture of continuous learning, dedicating time each week to explore new technologies. Gained experience with React Testing Library, MSW, and Python basics.`,
   },
   {
     Role: "IT Trainee/ICT DevOps Engineer",
@@ -85,8 +86,13 @@ export const Experiences: Array<ExperienceItem> = [
     Company: "Ericsson AB",
     City: "Stockholm",
     Country: "Sweden",
-    Description:
-      "IT Trainee program. Rotation in different areas within Group-IT and get a broader understanding of Ericsson Business. Opportunity to build a larger network within Ericsson and explore different areas of interest such as Cloud, Analytics, Machine Learning, Artificial Intelligence and Cyber Security. Responsible for delivering results, meeting customer expectations. Manage License Models, ensure  asset registration and definition management among other administrative tasks.",
+    Description: `During my first year as an IT trainee at Ericsson AB, I gained experience in various roles, starting with the Portfolio team. I was introduced to tools like JIRA and Confluence, where I helped create documentation for existing applications and improved my skills in utilizing Microsoft 365 platforms. I was involved in using PowerApps to streamline processes between business teams and order placements, enhancing order efficiency and customer satisfaction.\n
+      Additionally, I honed my presentation skills by preparing business cases and engaging a wide audience, learning to create compelling, effective PowerPoint presentations using Ericsson’s templates.\n
+      I also completed the Engine Yellow Belt Certification, which equipped me with Lean, Agile, and Six Sigma methodologies. I became adept in using the DMAIC framework to drive process improvements, manage change initiatives, and apply data-driven solutions. \n
+      My second rotation was in the Automation and AI division, where I contributed to the 5G Smart Factory team. I worked on building systems with Azure Cloud services, learning about automation, Industrial IoT, and agile development practices. I also expanded my technical expertise by automating tasks using Excel VBA, creating reports, and learning Power BI to analyze and visualize data.\n
+      In the cloud team, I played a key role in developing a dashboard for the procurement team, where I contributed ideas, worked with stakeholders to define design, and collaborated with a Tableau expert to build a functional prototype. This dashboard became a useful tool for the team, and I learned how to translate business needs into impactful visual solutions. Throughout my time at Ericsson, \n
+      I also focused on building a strong professional network and worked cross-functionally with colleagues from diverse backgrounds, refining my communication and teamwork skills.
+      `,
   },
 ];
 
@@ -113,7 +119,7 @@ export const Skills: Array<SkillItem> = [
   { Item: "HTML" },
   { Item: "React Testing Library" },
   { Item: "React Library" },
-  {Item: "Node.js"},
+  { Item: "Node.js" },
   { Item: "Java" },
   { Item: "SQL" },
   { Item: ".Net Core" },
