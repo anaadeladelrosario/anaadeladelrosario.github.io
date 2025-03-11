@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-
 import { Config } from "@root/config.ts";
+import Claw from "../components/Claw.astro";
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -31,5 +31,6 @@ import { Config } from "@root/config.ts";
         See my work link to gitub
       </a>
     </div>
+    <div class="mt-8"><Claw /></div>
   </div>
 </BaseLayout>
