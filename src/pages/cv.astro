@@ -9,32 +9,17 @@ import SkillsList from "@components/cv/SkillsList.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
-  </div>
-
-  <div class="mb-10 text-justify">
-    <p>
-      Software Engineer with special focus in Frontend development. With a
-      background in social research and communication. Passionate about people
-      and technology, and seeking IT opportunities that allow me to
-      build user friendly systems with purpose and impact. In my free time I do
-      photography, combat sports and running. I am also a food lover who enjoys
-      baking.
-    </p>
-  </div>
+  <div class="header">Experience</div>
+  <ExperienceTimeline />
 
   <div class="header">Education</div>
   <EducationTimeline />
 
-  <div class="header">Languages</div>
-  <LanguagesList />
-
-  <div class="header">Experience</div>
-  <ExperienceTimeline />
-
   <div class="header">Certifications</div>
   <CertificationList />
+
+  <div class="header">Languages</div>
+  <LanguagesList />
 
   <div class="header">Skills</div>
   <SkillsList />

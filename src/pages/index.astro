@@ -1,19 +1,22 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-
 import { Config } from "@root/config.ts";
+import Claw from "../components/Claw.astro";
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hi!</div>
-    <div class="text-5xl font-bold">I am {Config.MyName},</div>
-    <div class="text-3xl py-3 font-bold">a Software Engineer</div>
+    <div class="text-5xl font-bold">I am {Config.MyName}, </div>
+    <div class="text-3xl py-3 font-bold">a Software Engineer with special focus in Frontend development and a background in social research and communication.</div>
     <div class="py-2">
       <text class="text-lg">
-        Check CV tab on the column to your left to read more about me and past
-        experience
+      Passionate about people and technology, and seeking IT opportunities that allow me to
+      build user friendly systems with purpose and impact. In my free time I do
+      photography, combat sports and coding. I am also a food lover who enjoys
+      baking. Check CV tab on the column to your left to read more about me and past
+      work experience
       </text>
     </div>
     <div class="mt-8">
@@ -28,5 +31,19 @@ import { Config } from "@root/config.ts";
         See my work link to gitub
       </a>
     </div>
+    <div class="mt-8"><Claw />
+      <text class="text-lg">
+      <h1>Play Claw Game!</h1>
+      <ul>
+        <li><strong>Mobile mode</strong></li>
+        <li>Move from left to right</li>
+        <li>Press the yellow button to collect the messane</li>
+        <li><strong>Desktop mode</strong></li>
+          <li>Move with Arrow Keys Right and Left</li>
+          <li>Press Spacebar to Collect the Message</li>
+      </ul>
+      </text>
+    </div>
   </div>
 </BaseLayout>
+
