@@ -4,8 +4,9 @@ import TimelineElement from "@components/cv/TimelineElement.astro";
 
 const title = Item.Role;
 const subtitle = `From ${Item.StartYear} to ${Item.EndYear} @ ${Item.Company}, ${Item.City}, ${Item.Country}`;
+const paragraphs = Item.Description.split('\n').filter(p => p.trim() !== '');
 ---
 
 <TimelineElement title={title} subtitle={subtitle}>
-  <p>{Item.Description}</p>
+  {paragraphs.map((paragraph) => <p style="margin-bottom: 1em;">{paragraph}</p>)}
 </TimelineElement>
